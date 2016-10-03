@@ -3739,7 +3739,7 @@ class CfgLocker
 {
 	numbersOnly = "0123456789";
 	
-	maxDeposit = 10000;
+	maxDeposit = 250000;
 };
 
 class CfgPlayer 
@@ -3749,11 +3749,11 @@ class CfgPlayer
 	thirstDecay = 60;
 
 	// Damage taken from 0 (health||thirst)/sec
-	healthDecay = 5.0;
+	healthDecay = 1.0;
 
 	// Health regen if over BOTH
-	thirstRegen = 90;
-	hungerRegen = 90;
+	thirstRegen = 80;
+	hungerRegen = 0;
 
 	// IF above meet recover HP%/MIN
 	recoveryPerMinute = 2;
@@ -3773,15 +3773,15 @@ class CfgPlayer
 class CfgSlothMachine
 {
 	spinCost = 100;
-	Jackpot = 10100;
+	Jackpot = 20000;
 	
 	chances[] = 
 	{
-		{85, ""}, 					// 85% = Nothing
-		{95, "Level1"}, 			// 10% = 1pt
-		{96, "Level2"}, 			// 1% = 10pt
-		{97, "Level3"}, 			// 1% = 25pt
-		{98, "Level4"}, 			// 1% = 50pt
+		{65, ""}, 					// 85% = Nothing
+		{85, "Level1"}, 			// 10% = 1pt
+		{90, "Level2"}, 			// 1% = 10pt
+		{93, "Level3"}, 			// 1% = 25pt
+		{97, "Level4"}, 			// 1% = 50pt
 		{99, "Level5"},				// 1% = 100pt
 		{100, "Jackpot"} 			// 1% = Jackpot
 	};
@@ -3791,31 +3791,31 @@ class CfgSlothMachine
 		class Level1
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_ToiletPaper.paa";
-			prize = 101;
+			prize = 100;
 		};
 
 		class Level2
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_CockONut.paa";
-			prize = 110;
+			prize = 200;
 		};
 
 		class Level3
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_Beer.paa";
-			prize = 125;
+			prize = 1000;
 		};
 
 		class Level4
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_Knife.paa";
-			prize = 150;
+			prize = 5000;
 		};
 
 		class Level5
 		{
 			symbol = "\exile_assets\texture\item\Exile_Item_Safe.paa";
-			prize = 200;
+			prize = 7500;
 		};
 		
 		class Jackpot

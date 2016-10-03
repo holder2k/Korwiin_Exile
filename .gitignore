@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Arma 3 Files not to publish
+*.pbo
+infiSTAR_AdminMenu.hpp
+
